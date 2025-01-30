@@ -1,0 +1,1 @@
+SELECT * FROM `bigquery-public-data.san_francisco_bikeshare.bikeshare_regions`;
