@@ -1,5 +1,6 @@
 # san_francisco.bikeshare
 **Otimização de investimentos em aluguéis de bicicleta em SF (EUA)**
+
 _A partir dos dados públicos de aluguéis de bicicleta em São Francisco foi possível indicar novos investimentos para a melhoria do sistema_
 
 ![Gemini_Generated_Image_uoj1druoj1druoj1](https://github.com/user-attachments/assets/43e68a06-2ac1-4df2-8f6a-309c26b866e8)
