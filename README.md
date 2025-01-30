@@ -4,16 +4,20 @@ _A partir dos dados públicos de aluguéis de bicicleta em São Francisco foi po
 
 ![Gemini_Generated_Image_uoj1druoj1druoj1](https://github.com/user-attachments/assets/43e68a06-2ac1-4df2-8f6a-309c26b866e8)
 
-_Nome do Dataset:
+**Nome do Dataset:**
+
 - bigquery-public-data.san_francisco.bikeshare_trips
 
-Outros Dataset relacionados:
+**Outros Dataset relacionados:**
+
 - bigquery-public-data.san_francisco.bikeshare_stations_info
 - bigquery-public-data.san_francisco.bikeshare_station_status
 - bigquery-public-data.san_francisco.bikeshare_regions
 - bigquery-public-data.san_francisco.bikeshare_trips_
 
+
 **Ferramentas:** Looker Studio; SQL; Google Cloud; Google BigQuery.
+
 
 **Dashboard:** https://lookerstudio.google.com/s/noS0cargGz0
 
@@ -28,13 +32,14 @@ Outros Dataset relacionados:
 Os datasets foram então únificados com a função JOIN no SQL, dentro do próprio Google BigQuery e então os dados foram analisados no Looker Studio.
 
 
+
 **Análise temporal**
 
 Ao todo foram realizadas quase 2 milhões de viagens e a quantidade de viagens oscilou em 3 períodos distintos:
 - Ago/2013 a Set/2016: quantidade de viagens relativamente constante (média de 26.500 viagens);
 - Out/2016 a Mar/2018: Período sem registros de viagens (inativo);
 - Jun/2017 a Abr/2018: Período com crescimento de viagens (215%; média de 83.500 viagens) e que coincide também com uma melhor qualidade na coleta de dados, quando foram adicionadas informações como gênero e idade dos clientes.
-- 
+
 ![Captura de tela 2025-01-27 153805](https://github.com/user-attachments/assets/c2a4aebc-dc5d-4504-a980-bd2931fa332f)
 
 
@@ -48,14 +53,14 @@ Ao todo foram realizadas quase 2 milhões de viagens e a quantidade de viagens o
 **Perfil do público**
 - O publico que mais utilizou a bicicleta esteve entre 36 e 50 anos, essa faixa representa 50% das viagens. A distância média percorrido pelos clientes foi de 1639 metros, com desvio padrão de 981 metros;
 - Não há uma relação entre a distância percorrida e a idade dos usuários.
-- 
+
 ![Captura de tela 2025-01-27 160039](https://github.com/user-attachments/assets/8759e14e-f35c-47fa-8c2f-afcb2132d3bf)
 
 
 - O uso entre os homens foi consideravelmente maior que entre as mulheres;
 - A diferença entre a idade média de uso por homens e mulheres variou em apenas 2 anos;
 - A faixa de idade que mais usa as bicicletas não parece alterar de acordo com o gênero.
-- 
+
 ![Captura de tela 2025-01-27 160628](https://github.com/user-attachments/assets/b4af1c85-f460-4331-8e5d-adf274ade62e)
 
 
@@ -63,5 +68,5 @@ Ao todo foram realizadas quase 2 milhões de viagens e a quantidade de viagens o
 - A estação de maior uso por capacidade foi San Francisco Caltrain;
 - O mapa abaixo mostra o uso das estações, de acordo com a quantidade de viagens e suas capacidades na região de São Francisco. Percebe-se que a região próxima da ponte localizada a Nordeste é a de maior uso e pode ser o alvo de novos investimentos para otimizar o sistema;
 - A tabela na parte inferior esquerda permite a ordenação entre as estações de menor e maior uso, facilitando em maior detalhes decisões de investimentos nas estações.
-- 
+
 ![Captura de tela 2025-01-27 162139](https://github.com/user-attachments/assets/fb1c9a3a-2a74-4733-a14a-8abf68f06d07)
